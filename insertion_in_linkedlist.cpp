@@ -37,3 +37,14 @@ void insertAtEnd(node* &head, int val){
     }
     p->link=n;
 }
+
+
+//For output
+void display(node* head){
+    node* p = head;
+    while(p!=NULL){
+        cout << p->data <<"->";
+        p = p->link;
+    }
+    cout << "NULL" <<endl;
+}
