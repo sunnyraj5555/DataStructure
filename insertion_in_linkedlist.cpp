@@ -14,3 +14,11 @@ class node{
 };
 
 
+//create new node node
+//change the link of n-> to head, right now head-> link = first node
+// now change head = now
+void insertAthead(node* &head, int val){
+    node* n = new node(val);
+    n->link = head;
+    head=n;
+}
