@@ -53,11 +53,14 @@ void display(node* head){
 int main()
 {
     node* head = NULL;
-    insertAtEnd(head,3);
-    insertAtEnd(head,6);
+    	insertAtEnd(head,3);
+    	insertAtEnd(head,6);
+ 	insertAtEnd(head,9);
+ 	insertAtEnd(head,15);
+ 	insertAtEnd(head,17);
     display(head);
     
-    insertAthead(head,1);
+    	insertAthead(head,1);
     display(head);
 
 	return(0);
