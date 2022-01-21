@@ -48,3 +48,17 @@ void display(node* head){
     }
     cout << "NULL" <<endl;
 }
+
+
+int main()
+{
+    node* head = NULL;
+    insertAtEnd(head,3);
+    insertAtEnd(head,6);
+    display(head);
+    
+    insertAthead(head,1);
+    display(head);
+
+	return(0);
+}
