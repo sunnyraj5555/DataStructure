@@ -22,3 +22,18 @@ void insertAthead(node* &head, int val){
     n->link = head;
     head=n;
 }
+
+void insertAtEnd(node* &head, int val){
+    node* n = new node(val);
+    
+    if(head == NULL){
+        head = n;
+        return;
+    }
+    
+    node* p = head;
+    while(p->link != NULL){
+        p=p->link;
+    }
+    p->link=n;
+}
